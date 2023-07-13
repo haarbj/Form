@@ -2,28 +2,28 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <title>Password Input</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <title>Sign Up Page</title>
   </head>
 
   <body>
   <a href="./index.html">Login</a>
   <a href="./createBurger.html">Order</a>
-    <section id="overlay">
-      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
-      <hr>
-      <form>
-				<h1>Login to start creating a burger!</h1>
+    <section class="overlay">
+      <h1>Sign Up</h1>
+      <p>Create an account:</p>
+      <form action="submission.html" method="GET">
         <label for="username">Username:</label>
-  			<input type="text" placeholder="user1990" name="username" id="username">
         <br>
-        <label for="user-pw">Password:</label>
-	<input type="password" placeholder="UserPass123!" id="user-pw" name="user-pw"
+        <input id="username" name="username" type="text" minlength="3" maxlength="15" required>
+        <br>
+        <label for="pw">Password:</label>
+        <br>
+        <input id="pw" name="pw" type="password" minlength="8" maxlength="15" required>
+        <br>
+        <input type="submit" value="Submit">
       </form>
-    </section>
-    <section class="submission">
-      <input type="submit" value="Submit">
     </section>
   </body>
 </html>
